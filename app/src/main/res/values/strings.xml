@@ -1,0 +1,383 @@
+<resources>
+    <string name="app_name">Yoga For You</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="sun_salutation_purpose">
+        The series of poses which comprise the sun salutation are executed continuously. The Sun Salutation has a complete and total effect on the entire body. All the plexus of the body are stimulated. Circulatory system is rejuvenated. The pulmonary, nervous systems, digestive organs and the large muscle groups are all affected. It affects each section of the spine and all the other joints of the body. It is used in Hatha Yoga as a warm up exercise and for enhancing the cardiovascular system.
+    </string>
+
+    <string name="seated_angle_purpose">
+        This is a profound inner thigh stretch but the hamstrings are also affected as well as the groin area. This posture also promotes a sense of balance and control. If you find it hard to straighten your legs or if you tip over dont be discouraged try again anyway.
+    </string>
+
+    <string name="plough_purpose">
+        The plough relaxes the muscles of the back and thighs while stretching the ligaments of the spinal column. The pose stimulates and tones all the internal organs, it aslo stimulates the circulatory system and will reduce fatigue. This is why this pose is at once relaxing and stimulating. Its main focus point is the spine. This pose presents a high degree of difficulty, proceed with caution.
+    </string>
+
+    <string name="shoulder_stand_purpose">
+        The shoulder stand will affect the entire body stimulating the endocrine, nervous, and circulatory systems. The thyroid gland in the throat area is benefited as well as the whole nervous system. It is also good for mental functions such as memory.
+    </string>
+
+    <string name="both_big_toe_purpose">
+        This pose is primarily for the spine. It will massage the entire spinal column, stimulating each vertebrae. The muscles of the legs are stretched particularly the hamstrings. It is a good warm up exercise for the spine and is also a lot of fun.
+    </string>
+
+    <string name="upward_purpose">
+        This pose reverses the stretch of the spine from either the plough or the shoulder stand pose. It relieves pressure in the neck. Moving in and out of this pose strengthens the abdominal and lower back muscles and makes the spine and the wrists more supple.
+    </string>
+    
+    <string name="extended_purpose">
+        This posture works the muscles of the arms, legs, back and torso. It strengthens and stretches all these areas.
+    </string>
+    
+    <string name="headstand_purpose">
+        1) As the body is turned upside down, the heart need not work on pumping the blood back up from the legs. This gives a heart a very well deserved rest. Also this helps with people suffering from varicose veins ( which is a common problem with many women after pregnancy ).\n\n 2) The upside down position of the body also relieves the pressure on the lower back there by relieving any tension there.\n\n 3) As the head is held lower than the heart, there is a lot more blood circulation to the brain ( which needs about 20% of the total blood circulation in the body to function properly ). The rich and fresh supply of oxygen to the brain enhances the brain functions which also aids in proper physical functioning of all the organs ).
+    </string>
+    
+    <string name="waist_purpose">
+        This pose stretches the lateral muscles and helps to reduce fat from this area.
+    </string>
+
+    <string name="headfeet_purpose">
+        This asana primarily strengthens the legs , but also stretches the arm muscles and the upper back. It will work the knees, so be careful if you have had a prior injury there.
+    </string>
+    
+    <string name="rock_cradle_purpose">
+        This exercise is a good preparation for the Lotus posture. It will loosen tight knee and hip joints.
+    </string>
+
+    <string name="headknee_purpose">
+        The lateral muscles receive a profound stretch, as well as the muscles of the legs and feet.
+    </string>
+    
+    <string name="situp_purpose">
+        This asana strengthens the abdominal muscles.
+    </string>
+
+    <string name="sidebend_purpose">
+        This pose stretches the lateral muscles and helps to reduce fat from this area.
+    </string>
+    
+    <string name="halflord_purpose">
+        This pose stretches the entire spine, it gives you a full spinal twist. Helps to align the spine.
+    </string>
+
+    <string name="pigeon_purpose">
+        This pose has an over-all affect. It strengthens, stretches, and tones the spinal column and stretches the chest and rib cage. It strengthens and stretches the muscles of the groin and hip joints. It stimulates the nerves around the spine assisting the metabolism and especially the reproductive glands and organs. The focus point is on the cervical and sacral vertebrae.
+    </string>
+    
+    <string name="legwarm_purpose">
+        This is a warm up series to strengthen the large muscles of the legs in preparation for standing postures. The knees get a good workout so if you have problems with your knees you might find this series difficult.
+    </string>
+    
+    <string name="lotus_purpose">
+        Sit with legs extended forward. Take the left foot and bring it up onto the right thigh, with the soles of the foot upturned. Now take the right foot and bring it up over the left leg so that it can be similarly placed on the left thigh. Getting the right leg up over the left thigh may present problems for some, so try try again. It helps to do the Rock the Cradle pose first as well as some ankle rolls. Sit with the back very straight when in pose.
+    </string>
+    
+    <string name="forward_purpose">
+        One of the most effective poses for lumbago and back pain. It is also very effective in reducing weight around the waist and for increasing ones height.
+    </string>
+    
+    <string name="tree_purpose">
+        This pose increases sense of balance and brings flexibility to the ankles and knees
+    </string>
+
+    <string name="warrior_purpose">
+        Promotes balance. Strengthens the legs, stretches the spine and releases tension in the back and shoulders. Gives the body both grace and strength.
+    </string>
+    
+    <string name="intense_purpose">
+        Releases tension in the shoulders and and neck area. Great for strengthening the arms and the back of the body while stretching the front of the body.
+    </string>
+    
+    <string name="balance_purpose">
+        As the name implies this is a good balance exersice. It also strengthens the legs and stretches the spine. It releases tension from the shoulder area.
+    </string>
+    
+    <string name="triangle_purpose">
+        Increases flexability, tones the nerves in the spine, strenghtens the hip joints. The main focus of the pose are the hamstrings which recieve a profound stretch.
+    </string>
+
+    <string name="shooting_purpose">
+        The leg muscles are stretched and both arms and legs strengthened.
+    </string>
+    
+    <string name="swan_purpose">
+        This pose flexes and strengthens the spine, shoulders, arms, wrists, chest, throat and pelvic area. It also effects the abdominal area, increasing its flow of blood and energy. The abdominal organs are massaged and the second position also limbers the knee and hip joints. The shoulders and arms receive a good stretch, toning the muscles and preventing fat deposits. This posture is good for straightening the back and shoulders. The movements help the peristaltic activity, therefore maintains healthful digestion and elimination. it is most effevtive in reducing the fat on the abdomen.
+    </string>
+
+
+
+    <string name="palm_purpose">
+        This exercise is one in a series designed to relieve stress and tension from the middle of your shoulders and the nape of the neck. By contracting and stretching these areas tension is released from the whole body.
+    </string>
+    
+    <string name="bent_arm_purpose">
+        This exercise is one in a series designed to relieve stress and tension from the middle of your shoulders and the nape of the neck. By contracting and stretching these areas tension is released from the whole body.
+    </string>
+    
+    <string name="undulating_purpose">
+        This exercise is one in a series designed to relieve stress and tension from the middle of your shoulders and the nape of the neck. By contracting and stretching these areas tension is released from the whole body.
+    </string>
+    
+    <string name="half_lotus_purpose">
+        This exercise will stretch the muscles of the neck, upper, middle and lower back and shoulder areas which helps to reduce tension. The other benifits are that the hip joints are opened and massaged, it also envigorated the organs in the abdominal region.
+    </string>
+    
+    <string name="woodchopper_purpose">
+        This exercise is also a great tension release for the middle shoulder area and the neck. But it may be used to energize and stimulate the whole body and is a great warm up for your yoga sessions.
+    </string>
+    
+    <string name="down_dog_purpose">
+        This pose relieves stiffness and tension in back, shoulders and legs, particularily the hamstrings. Helps to eliminate fatigue and rejuvenates brain cells. Also benefits digestion.
+    </string>
+    
+    <string name="up_dog_purpose">
+        This posture stretches the muscles in the middle of your shoulders and the nape of the neck, but it also opens the chest and strengthens the whole body. Upwardfacing dog aligns the spine and invigorates the kidneys and nervous system. It stimulates circulation which helps reduce stress.
+    </string>
+
+    <string name="recline_purpose">
+        This exercise stretches the neck and shoulder muscles and gives an excellent twist to the whole spine, great for menstrual cramps as well.
+    </string>
+    
+    <string name="cat_purpose">
+        Improves digestion and circulation. Helps manage hyper-tension, limbers spinal column and relieves tension in lower back, upper back and shoulder area as it improves respiration and strengthens breathing muscles. This is an excellent exercise for relieving tension that lodges in the shoulders, and upper back. It improves breathing, and stimulates circulation.
+    </string>
+    
+    <string name="neck_stretch_purpose">
+        This exercise is one in a series designed to relieve stress and tension from the middle of your shoulders and the nape of the neck. By contracting and stretching these areas tension is released from the whole body.
+    </string>
+    
+    <string name="knee_squeeze_purpose">
+        Increases circulation in the neck, shoulders and lower back which helps to reduce tension in these areas but it also has the added benifits of reducing body fat and strengthening abdominal muscles, it also relieves gas and heartburn and helps with constipation.
+    </string>
+    
+    <string name="shoulder_lift_purpose">
+        This exercise is one in a series designed to relieve stress and tension from the middle of your shoulders and the nape of the neck. By contracting and stretching these areas tension is released from the whole body.This is an excellent exercise to do before or after any asana that may put a strain on the shoulders such as the Shoulderstand or the Plough.
+    </string>
+    
+    <string name="lion_purpose">
+        The face can hold alot of tension, this pose releases facial tension.
+    </string>
+
+
+    <string name="alternate_purpose">
+        The left nostril is called the Ida, the right nosrtril is called Pingala. When you are healthy you will breathe predominantly through the left nostril for about one hour and fifty minutes, then through the right nostril for the same amount of time. In most of us this natural rhythm is disturbed and needs balancing. Anuloma Viloma restores the natural balance in your breathing.
+    </string>
+
+    <string name="sitkari_purpose">
+        Inproves your disposition, relieves hunger and thirst. It also cools the body down. Highly recommended during a fast or to help endure very hot weather.
+    </string>
+    
+    <string name="sithali_purpose">
+        Clears the mind and promotes good memory
+    </string>
+    
+    <string name="ujjayi_purpose">
+        Ujjayi strengthens the nervous and digestive systems. A powerful cure for phlegm.
+    </string>
+    
+    <string name="surya_bheda_purpose">
+        Surya means sun. The path of the sun is the right nostril. When you inhale solely through the right nostril you generate heat energy which is sent out through your body. Impurites are dispelled. The movement of Prana is unblocked. You are vibrating at a higher frequency which helps your immune system in general. This kinetic energy may be used to release psychic forces.
+    </string>
+    
+    <string name="bhastrika_purpose">
+        This is the most effective and powerful of all the various exercises to raise Kundalini. Bhastrika is the king of Pranayamas, it will revive and stimulate the nervous system and the circulatory system. It will clear the mind of confusion and enhance your powers of focus. The body is successively heated then cooled creating a condition of optimum energy transference.
+    </string>
+    
+    <string name="uddiyana_purpose">
+        Forces Pranic energy up the Sushumna nadi. Conserves energy.
+    </string>
+    
+    <string name="moola_purpose">
+        This Lock prevents Apanic energy from escaping the lower body. It also draws up Apanic energy to unite it with Pranic energy in the middle of the body
+    </string>
+
+
+    <string name="sun_salutation_process">
+        (1) Stand with your arms bent at the elbow, hands pressed together in prayer position in front of the chest.\n\n
+
+(2) INHALE, raise your arms up over your head then lean backwards as much as is comfortable. Look behind you. Hold for a brief few seconds.\n\n
+
+(3) EXHALE fold forward slowly bring your arms down in front of you all the way to the floor. ( knees are extended but not locked.)\n\n
+
+(4) INHALE step your left foot back to lunge position, while bending the right knee. EXHALE.\n\n
+
+(5) INHALE bring your right foot back to meet the left foot you are now in (downward facing dog) position. Hold your breath for a second or two.\n\n
+
+(6) EXHALE, lower your body down, raise your elbows, and rest on your hands, here the hands, chin, knees and toes are all touching the floor.\n\n
+
+(7) INHALE, raise your head, shoulders and chest up into the cobra position. The hips should not leave the floor. For those who are able to go from the downward facing dog position straight into the cobra position please do so, then EXHALE and come back down to the floor with your head and shoulders.\n\n
+
+(8) INHALE, raise your body to form a peak or the downward facing dog position again. EXHALE.\n\n
+
+(9) INHALE, assume the lunge position as in step 4 by bringing your left foot forward and placed flat on the floor between the arms.\n\n
+
+(10) EXHALE now step the right foot forward so the feet are together, try to touch your nose to your knees.\n\n
+
+(11) INHALE Lift your arms and torso up above your head and if your can lean backwards and hold your breath for a sec or two.\n\n
+
+(12) EXHALE resume prayer posture with your hands in front of the chest the back is straight the legs are straight.
+    </string>
+    <string name="seated_angle_process">
+        Sit with your legs extended in front of you, grab your ankles, bend your knees and turn the soles of your feet together, press down gently on the knees . Now sit up straight and gaze upwards, pull up with your chin to help elongate the spine. INHALE then EXHALE as you gently lean forward, leading with your chin, drop the head forward and round the back. Now Exhale completely, breathe softly through the nose. Hold for a few breaths. On the Inhalation lift your head and gently return to the a seated position. Bring the feet into the groin, hold on to the big toes. INHALE, then EXHALE and lift one leg up and out to the side, hold on to the toe and pull the toe towards you, Exhale completely, then breathe abdominally. Hold for a few breaths. INHALE, then EXHALE and bend the knee and bring the heel back into the groin. Sit up straight, check the spine, keep your chin up. Repeat the same cycle with the other leg. Then extend the legs keeping the soles of the feet together. Follow this with another forward bend. Then end the series by bringing the heels up to the groin, sitting up straight, holding your chin up. Then hold on to both toes as you lean back a little, INHALE, then EXHALE as you lift both legs out to the sides, keep the toes at chin level, hold on to the toes and pull them towards you, EXHALE completely and balance on the buttocks. Breathe abdominally , hold for several breaths. Keep the spine straight and gaze up. INHALE then EXHALE bend the knees, return the heels to the groin and sit up. Repeat the whole cycle three or four times.
+    </string>
+    <string name="plough_process">
+        Lying on your back, with your legs together and your hands by your side, palms down. INHALE As you raise your legs, then EXHALE. INHALE swing your legs back past your head again and raise your hips up off the floor. (Here you may bend your elbows and bring your hands up to hold your hips if you need to). EXHALE and lower the legs onto the floor behind your head. As you become more flexible you will be able to walk your toes out even farther away from your head. Curl your toes under and push back on your heals. The neck and abdominal areas are now very compressed so breathe more shallow and gently through the nose, hold the pose for several breaths. You may clasp your hands together and lay them down behind your back on the floor if you can. Hold this pose for several breaths. When you are ready, INHALE then EXHALE and lift your legs but keep them close to your body, roll back down, you may lift the hands to catch the hips. Roll out very slowly. Try to control your exhalation as you then lower the legs to the floor. Close your eyes let out several deep exhalations then assume Savasana or the corpse pose. Repeat several times.
+    </string>
+    <string name="shoulder_stand_process">
+        Lay on the floor with your legs together and your hands palms down by your side. INHALE push down on your hands and raise your legs straight up above you. EXHALING bend your arms and place the eblows on the floor, support your body with your hands placed just under the hip bone. Press your body up, try to get your legs and spine in a straight line from your shoulders to your toes. Press your chin firmly into the base of your throat. Breathe more shallow now and through the nose. Gradually work your elbows closer into each other and your hands down your back toward the shoulders. Your legs and feet should be relaxed. You may at this point let go of your back if your can and lay your arms down on the floor behind your back. If you are able clasp the hands together and bring your shoulders in a little for maximum stretch. Hold the pose for as long as is comfortable for you then bring your hands up to the hips to catch the bodies weight as you roll back down. EXHALE as you come down. Roll out the spine very slowly, one vertebrae at a time. Keep the legs close to the body as you release them. Always follow this pose with the Fish Pose. Preform the shoulder stand only once but for as long a time as possible.
+    </string>
+    <string name="both_big_toe_process">
+        Begin from a laying down position. It is important not to bend your knees if you can. INHALE, now tilt back slightly and raise your legs. Grab the toes or the ankels or the back of the calves with your hands, EXHALE. INHALE then EXHALE keep the head centered, hold on tight and bring both legs over the head, toes to the floor behind your head. INHALE roll up to balance on the buttocks again while holding on to the toes. Do the best you can with this pose, if in the beginning you bend your knees its ok. Repeat three or four times.
+    </string>
+    <string name="upward_process">
+        Begin by laying on the floor. Bring the feet up toward the buttocks, keeping them flat on the floor and about hip width apart. Turn the toes in a little. Now place the hands, palms down, alongside the ears. INHALE, Tighten the muscles of the legs and arms. EXHALE, press up into the air. Keep the feet flat and parallel on the floor, push off the feet and hands. Raise the body and then try to straighten the arms and legs. Don\'t try to hold the head up, let the neck relax instead and drop the head back. Hold for several breaths. When releasing come down slowly on the EXHALATION. Repeat two to three times.
+    </string>
+    <string name="extended_process">
+        Step your feet apart about four feet or as far as you can without discomfort to the hips. keep your feet parallel. Extend your arms out to the sides. Turn the left foot out to about a ninety degree angle and the right foot to a thirty degree angle. Keep the arms parallel, INHALE bend the knee of the left leg which is turned out ninety degrees. EXHALE descend into the posture by bending the left knee and bringing it over the left ankle. Place the left hand to the outside or the lateral side of the left foot. Reach over the right ear with the right arm. Look up towards the right hand. Place the chin near the right arm pit. A straight line should be formed by the arms sides and hips. Breathe deeply through the nose. Lift back up on the INHALATION. Now repeat the other side. Hold the pose for a min. or so on each side. You may repeat the whole sequence two times.
+    </string>
+    <string name="headstand_process">
+        Kneel down and rest your weight on your forearms. Wrap your hands around your elbows. Release your hands and place them in front of you, with fingers interlocked. Your elbows should now be locked into position. Place the back of the head in your clasped hands and the crown of your head on the floor. This should form a secure tripod and give you a firm foundation for the inverted body position. INHALE straighten you knees and raise your hips EXHALE. Without bending the knees, walk your feet into the body. Pull your hips back so that your neck is not bent backward or forward but rather is in a straight line with the spine. INHALE Bend the knees into your chest and lift your feet up off the floor, pulling your hips backward into alignment with the spine. EXHALE and PAUSE here . Do not immediately attempt to raise your legs up. Find your balance. INHALE keep the knees bent as you lift up the legs, straighten the legs then EXHALE. Breathe through your nose, try to keep from swaying, hold as long as possible. Then Come down very slowly reversing the sequence of actions exactly. Preform this pose once in a session.
+    </string>
+    <string name="waist_process">
+        Start by bringing your hands to your hips. Stand with a slight bend at the knees, this will help to keep the lower half of the body still. Press your chest just slightly forward, then pull it back to the side of the hip, then continue around to the back pressing out only slightly at first. Bring the chest back to the other side of the hip. For completion of the first circle. Progress out further with the chest if you are able until you can eventually drop the chest all the way forward and backward each revolution. INHALE as you go backward and EXHALE as you go forward. Breathe through the nose. Do several non stop revolutions in each direction.
+    </string>
+    <string name="headfeet_process">
+        Stand with your legs apart but not so much that it puts a strain on your hips. Turn the foot of the left foot out forty five degrees. Clasp your hands behind your back, turn the chest to face in the same direction as the left foot. INHALE as you EXHALE press the chest forward over the left leg while you simultaneously bend the knee of the left leg. Do not push the knee past the ankle of the left foot. Lay the chest on the thigh here if you need to rest or regain your stability. Then lift the chest off the thighs and continue to bend the knee. Lower the chest down as far as you can. Place the head down and try to touch the foot with the head if you can EXHALE completely. Hold the pose for several breaths. Then tighten the muscles of the left leg and on the INHALATION lift the chest up as you gradually straighten the knee. Come back to the standing position unlock the hand and stand in relaxed posture. Breathe deeply with long deep EXHALATIONS. Repeat on the other side. May be preformed once or twice in a session.
+    </string>
+    <string name="rock_cradle_process">
+        Sit on the floor with your spine straight. Breathe normally throughout this exercise. Extend your legs in front of you then turn the soles of the feet together. Bring the heels into the crotch. Pick up the left leg and wrap your left arm around the knee and shin area, bring the right arm around the left foot and lock the fingers of both hands together in front of the left leg. Now you are ready to rock the cradle. Gently move your arms back and forth as if your rocking a baby. Rock the leg several times. Then gently return the leg to the floor. Do the same on the other side. This is a good preparation for the Lotus posture.
+    </string>
+    <string name="headknee_process">
+        Sit up straight with your legs out in front of you, bend the right leg and bring the heel into the crotch. Press the sole of the right foot against the left thigh. Reach out with your left hand and grab the the left toe, ankle or calve. Keep your torso facing forward. INHALE then EXHALE as you tilt the torso sideways over the left leg, still facing forward. Bring the right arm up and over the head. Now descend over the left leg and grab the toe or the ankle or the calve. EXHALE completely. Breathe normally. Look forward, or if you can tilt the chest up and look up. Hold for several breaths then let go on the EXHALATION. Return to seated pose and do the same for the other leg. Do only once.
+    </string>
+    <string name="situp_process">
+        Sit with knees bent. Your torso and head should be straight, your arms out stretched at shoulder level by the outside of the knees. Take a deep breath through your nose and slowly begin to lay back exhale as you come down. Roll onto your spine from the tail up. Keep your head forward as you roll down to the ground. Gently lay your shoulders and head down as you exhale completely. Inhale then Exhale as you lift your head, then your shoulders, contract your stomach muscles as you lift up, always keeping your arms outstretched. Come back to a seated position. Your body should form a V shape. Hold the position but continue to breathe. This may be repeated several times, the pose should be held for several breaths before releasing back down onto the ground.
+    </string>
+    <string name="sidebend_process">
+        Stand with your arms to your side and feet comfortably apart turn the feet about forty five degrees out. INHALE, bring both arm up to shoulder level then EXHALE. INHALE and EXHALE as you turn your torso sideways to the left . Allow the left hand to travel down the side of the body to the left thigh and the right arm to rest on the right ear . EXHALE completely and then breathe deeply. Hold for several breaths. INHALE and return to to straight standing position with both arms at shoulder level. INHALE and EXHALE, lower the arm to the side. Repeat this on the other side. Preform this posture two or three times
+    </string>
+    <string name="halflord_process">
+        INHALE, fold your right leg under the left thigh, and bring the the left heel along the side of the hip. In this half pose you do not sit on the heel. Now cross your left leg over the right knee. Put the bottom of the left foot on the floor next to the right thigh. Exhale as you keep your chin up slightly, turn your head and shoulder in the direction of the bent left leg. As you turn extend the right arm from the shoulder. Press the back of the upper right arm against the outer knee and thigh of the left leg. Try to reach the right arm pit to the outside of the left knee. Then twist and look behind you, clear the chest past the thigh. Breathe deeply through the nose, relax the back muscles then adjust for maximum stretch. Hold this pose for as long as you can without strain. Then on the EXHALATION release and unwind from the pose. Do the same sequence of movements on the other side. This pose may be preformed once or twice a session.
+    </string>
+    <string name="pigeon_process">
+        INHALE, assume a kneeling position, sitting on your heels. Stretch your left leg back to a half split position, face the left knee down on the floor. EXHALE, then lift your head and look up to the ceiling, place your hands palms down on the floor next to the right knee. Hold for seveal breaths. Then come back to the kneeling position. Do the same with the right leg, for one round, do one or two rounds
+    </string>
+    <string name="legwarm_process">
+        Keel on the floor, keep your arms by your side at all times during the series of movements do not use them to help you up. Now INHALE then as you exhale sit down to your left side so that the left hip is on the floor and the knees are laying on top of each other. EXHALE, then INHALE, pull yourself up to the kneeling position again, do not use your arms to help you up. EXHALE Now INHALE, bring out your left leg and place the left foot flat on the floor in front of you. Using the muscles of the left thigh, and without the assistance of your arms, lift yourself up into a standing position. Stand with your spine straight EXHALE. Now rest in standing position, EXHALE deeply several times to release the tension. This is the end of one cycle. Repeat the same sequence on the right side. Four to five sets may be preformed before standing posture series begins.
+    </string>
+    <string name="lotus_process">
+        This pose is the most important and probably the most familiar of all the yoga poses. It is easily acquired by those with supple limbs other find it almost impossible but its worth while to attemp it you may be surprised at your ability. It is called the lotus pose because the position of the feet in the pose resemble lotus petals. This pose provides a firm base on which to sit for meditation , as the spine is allowed to straighten to an erect position. There is a theory in yoga that during meditation all body energies should be conserved for the meditation process, so the points at which energy usually escapes should be conserved or sealed. Energy it is thought usually escapes through the soles of the feet and through the palms of the hands and fingers, so by crossing the feet on the thighs energy is conserved. This is also why the fingers of both hands touch and are placed on the knees. This pose promotes suppleness in the legs and ankles.
+    </string>
+    <string name="forward_process">
+        Stand erect, feet six to eight inches apart. Keep your feet parallel right under the hips, INHALE, extend your arms in front of you. Fold forward at the hip, reach your arms out. Keep your back straight as you continue to fold forward. The arms should now be extended forward and your head should be between the arms face down, back straight and flat. EXHALE. You may pause and take another breath, INHALE then EXHALE, keep the arms extended and the back flat as you descend continuing to fold down from the hips. EXHALE when your hands reach the floor. This pose should be done with the legs straight but beginners can bend the knees as needed. Allow the spine to release tension simply let the weight of your torso pull the spine down, let go of any tension in your shoulders or arms, breathe naturally through the nose for several breaths. INHALE hold onto your ankles EXHALE pull your torso and head into your shins, look through your legs. Hold for several seconds, you may wrap your arms around your legs for an added stretch if possible. INHALE let go and bring the hands out, place the palms of the hands face up under each foot, you may bend the knees as you find your balance on your hands. Now straighten your legs if you can. INHALE lift your head and your back up until you feel your shoulders pulling, look up hold and hold your breath for several seconds, then EXHALE and return the head and shoulders to the knees and remove your hands from under your feet. Let your torso hang off your hips. Here you will feel the release of tension from your shoulders and your whole back. Now take a breath INHALE and reverse the movement up. Extend the arms out infront of you, keep the back flat as you ascend back to the standing position then EXHALE completely and stand in standing rest postion. Repeat twice.
+    </string>
+    <string name="tree_process">
+        Stand erect. Lift your right foot up and fold your leg, placing the right leg across your left thigh, find you balance by staring at some object which is directly infront of you. Now INHALE and lift both arms up from your side and raise them above your head. Press the palms of your hands together and bend your elbows. Your ears and arms should line up. Hold for several breaths then lower your hands and arms slowly. Do the same for the left leg. This is a single round do one round.
+    </string>
+    <string name="warrior_process">
+        Stand erect. Bend your elbows and place your hands palms pressed together in front of your chest. Step out the right leg as far as you can without making your hips uncomfortable, keep the right foot facing forward, turn the left foot slightly into the pose. INHALE then EXHALE and bend the right knee sit down into a sitting pose as far as is comfortable, making sure that the right knee never extends over the right foot. INHALE lift your arms up keeping the palms pressed together, lift your head up with your arms, try to keep the head between the arms. Exhale as you lean backward looking up and back if you can. Hold for a short time and reverse the movement as you come back. Bend the right knee and jump the right leg back to the legs together standing position. Repeat on the other side completing one set. Two sets may be practiced.
+    </string>
+    <string name="intense_process">
+        Sit on the floor with your legs extended in front of you. Place your hands on the floor behind your palms down, fingers pointing forward. INHALE lift up your buttocks first, pressing into the floor with the heels and your hands. Lift up your body until your body makes a straight line between the feet and the shoulders. Completely straighten your elbows and point your toes. Now EXHALE and drop the head back, look behind you. Hold for several seconds then INHALE lift your head up then EXHALE and lower the body back down to the floor. Repeat three times.
+    </string>
+    <string name="balance_process">
+        Stand erect. Bend the right leg at the knee. lift the foot up then grab the ankle with your right hand. Lift up the left arm up over the head. Pull the right foot away from the right hand but hold onto it, this helps you to find your balance and pulling the left arm up also contributes to finding balance. Keep the tension on the leg then INHALE now EXHALE and lean forward slowly as far as is comfortable, then look up. Hold for several breaths. Repeat on the other side. Do two rounds.
+    </string>
+    <string name="triangle_process">
+        Stand with your feet apart and arms to the side at shoulder level. Inhale, Exhale, bend forward and simultaneously twist your torso downward towards the right leg.Grasp your right ankle with your left hand and pull gently as your right arm lifts and straightens up toward the ceiling. Look at your hand left hand. Hold for several breaths. Then Inhale and return to the starting position. Repeat on the other side. Do once or twice.
+    </string>
+    <string name="shooting_process">
+        In this pose you draw one leg back like an archer drawing a bow. One side of the body maintains a forward bend while you open up the hip and shoulder joints on the other side. Now sit with both legs out in front. Reach forward with both hands and clasp your big toes. Keeping the left leg straight you Inhale, then pull the right foot back with your hand. Hold for several breaths. Try to straighten the body up and look to the front while you hold the pose. You can now Exhale and release the leg like an arrow, shooting it forward heel first, just let go of the toe. Repeat on the other side for one round. Do several rounds.
+    </string>
+    <string name="swan_process">
+        Start in modified Child pose with the arms stretched out infront of you. Inhale, Turn the toes in and lift your buttocks and press forward keeping your head down, then gently lift the head and shoulders by pushing off of your hands which should be positioned under the shoulders. Exhale. Inhale Straighten your arms lift your shoulder , chest and head up and look up. Hold for several breaths. Exhale. Gently lower the shoulders and chest to the ground. Now begin to lift the buttocks up and pull back into Child pose. This is one round do several rounds.
+    </string>
+
+    <string name="palm_process">
+        Sit up straight. This exercise may be done in a half lotus sitting position or in a chair. Press your palms together against your chest, your elbows should be parallel to the floor.INHALE twist to the right and look over your right shoulder, keep the palms pressed in the same position. Hold your breath for several seconds. EXHALE and twist to the left look over the left shoulder. Then return to center and INHALE. Now reverse and start with the Left side. Do two on each side.
+    </string>
+    <string name="bent_arm_process">
+        Sit up straight. Arms at your side, bend your elbows keep the palms up and touch your thumb and fingers. Try to keep the your forearms parallel to the floor. INHALE move your elbows backward while simultaneously lifting your head up and back. Hold your breath for five seconds. Close your elbows behind you, try to touch them together. You should feel your shoulder muscles contracting. EXHALE as you move the elbows forward until they are level with your shoulders, simultaneously drop your head forward and try to place your chin onto your chest. You should feel the stretch now in your neck and shoulders. Come back to the starting position and INHALE. That is one set, do three sets.
+    </string>
+    <string name="undulating_process">
+        Start by standing with the legs apart, feet facing forward and placed right underneath the shoulders. Bend both knees. Place the palms of the hands on the knees, continue to keep the arms straight, begin to sit down further and further not quite to knee level, you should feel your shoulder muscles stretch. Feel the stretch in the spine. Now INHALE leading with your chin, keep your head up then EXHALE slowly, keep your back flat as you lower your torso and bend your elbows. You should feel the shoulder muscles contract as you come down, look down at the floor in the extreme downward position, drop your head forward, expell your breath completely. Now INHALE as you round your back and lift the torso up again. Do not let the hands loose contact with the knees. Lift your head and look up. This is one set do three sets.
+    </string>
+    <string name="half_lotus_process">
+        Lay on the floor. Bend both knees, placing the heel of the foot next to the buttocks. Lift your arms up clasp the hands together and lay the hands palms up behind the neck. Now lift and cross the right leg over the left bent leg. INHALE then EXHALE as you lift both your legs and head up to meet each other. Feel the abdominal muscles contract. Bring the elbow up and in, press the chin against the chest. Hold for a few sec. INHALE as you release this hold. Repeat these movements with the other leg. This is one set. Do two sets.
+    </string>
+    <string name="woodchopper_process">
+        This exercise is preformed with INHALATION through the nose and EXHALATION through the mouth. The Exhalation is always very vigorous. \n\n
+
+Stand with the feet apart and placed just under each shoulder. The feet are pointed slightly out. Clasp your hands in front of you and raise them above your head, bend the elbows and let your hands drop behind the head. INHALE then EXHALE as you very vigorously swing your arms up and down in front of your body. Fold over at your hips, keep your back flat and your legs straight. In one continuous motion swing your arm through your legs exhaling completely. Now INHALE let your arms come back up infront of your body. Lift up your torso until your standing straight up with the arms up and back behind your head again. NOW turn your torso to the left and EXHALE vigorously through the mouth, as you swing your arms down to the left. Swing the arms through the legs but slightly turned to the left. INHALE up again. Turn to the RIGHT and EXHALE come down with your arms and swing through the legs turned slightly to the right. INHALE come back up. This is one set. THIS IS A CONTINUOUS MOTION EXERCISE. This exercise may be preformed as many times as you feel comfortable with. We recommend three sets.
+    </string>
+    <string name="down_dog_process">
+        Start on all fours. INHALE Keep the palms on the floor the slowly lift the buttock up keeping the arms straight and the back flat. The head should come to be between the arms looking back at the legs. Breathe and hold the position as long as is comfortable. Exhale, come back down to the all fours position on the floor.
+    </string>
+    <string name="up_dog_process">
+        Start on all fours, knees together, hands under each shoulder. Keep your arms straight and chin up. INHALE then EXHALE now thrust your chest forward and lower your buttocks to the floor. Your thighs should come down to the floor. Hips tilted up. Hold. Take several breaths. Look up and and slightly back. Feel The shoulder and neck muscles recieve a profound stretch. Now take a deep breath and return to your original position on all fours.This is one set, do two sets.
+    </string>
+    <string name="recline_process">
+        Lie on the floor, on your back, with your knees bent and your heels next to your buttocks. Bring your arms up to shoulder level palms down on the floor. Head faces forward with the chin down slightly. Keep the knees together, if you can. INHALE then EXHALE and allow the legs to gently drop to one side twisting the spine at the waist. Simultaneously turn your head in the opposite direction, while trying to keep both shoulders firmly planted on the floor. Hold for several breaths. Then INHALE and lift the legs up to the original position and return the head to face forward. Repeat on the other side for one set do two sets.
+    </string>
+    <string name="cat_process">
+        Start on all fours.INHALE then EXHALE as you gently round the back like a cat, press down on the hands. Simultaneously lower the head and press the chin against the chest. INHALE as you lift your head and push the spine down until it curves or arches, you should now be looking up. This is one set you should do three sets.
+    </string>
+    <string name="neck_stretch_process">
+        Sit up straight. Clasp your hand behind your neck. INHALE Pull your elbows back and look up. Hold for several seconds, then EXHALE and gently lower your head making sure that the spine remains straight. Bring the elbows down and in, try to touch them. Let the weight of your arms pull slightly on the back of the neck. Now INHALE and lift he head and arms up. Look up, with the elbows out and back. This is one set, do three sets.
+    </string>
+    <string name="knee_squeeze_process">
+        Lie flat on your back with your arms at your sides. Inhale to a count of three as you raise your right knee to your chest. Wrap your arms around your knee, squeeze your knee to your chest. Exhale to a count of three as you slowly relax, straightening your leg until it rests on the floor. Repeat with your left leg. Repetitions: 3 on each side, alternating sides. Then rest a moment, breathing gently. Try this same exercise but now lift both legs. In this variation it is important to breathe in to a count of three first, then hold your breath in for a count of three while you squeeze. If you try to breathe in and lift at the same time, you will not get a complete lung full of air because you will be tightening your stomach muscles to help you lift your legs. After a week or so of doing the double knee squeeze, you may add the following step. After you squeeze your knees to your chest, lift your forehead as far as possible between your knees, relax and breathe out. Do 3 Repetitions.
+    </string>
+    <string name="shoulder_lift_process">
+        Inhale then lift your shoulder up, press them towards your ears, contract or tighten the shoulder muscles and hold for several seconds. Then Exhale and push your shoulders away from your ears, relax the shoulder muscles and hold for several seconds. Repeat 3 or 4 times.
+    </string>
+    <string name="lion_process">
+        Sit erect. Eyes closed, mouth closed, hands clenched. INHALE then EXHALE forcefully through the mouth as you open your eyes as wide as possible simultaneously opening your mouth and sticking your tongue out as far as possible. Stretching the muscles around the face and eyes to there maximum. INHALE and return to the closed eyes and closed mouth position. Completely relax the face , let go of all the muscles in the face. Do this exercise three times.
+    </string>
+
+    <string name="alternate_process">
+With Alternate Nostril breathing you inhale through one nostril, retain the breath and then you exhale through the other nostril in a ratio of 2:8:4. Count to two when inhaling, hold for the count of eight then exhale to the count of four.\n\n
+
+One Round of Anuloma Viloma:\n\n 1) Breathe in through the left nostril closing the right. \n\n2) Hold breath,closing both nostrils.\n\n 3) Breathe out through the right nostril keeping the left nostril closed.\n\n 4) Breathe in through the right nostril keeping the left nostril closed.\n\n 5) Hold the breath, closing both nostrils.\n\n 6) Breathe out through the left nostril keeping the right closed.
+
+\n\nStart with three rounds build up to twenty rounds.
+    </string>
+    <string name="sitkari_process">
+        Sitkari and Sithali are both preformed with the inhalation occuring through the mouth instead of the nose. In Sitkari you press the tip of the tougue against the upper palate as you slowly inhale through the mouth. This should create a hissing sound. After retaining the breath for as long as you are able, slowly exhale through both nostrils.
+
+\n\nRepeat five to ten times.
+    </string>
+    <string name="sithali_process">
+        In this breathing exercise like Sitkari the inhalation is through the mouth. In Sithali you must stick your tongue out a little way and curl the sides up, making a straw like opening to sip the air through as you inhale. Close your mouth while you retain the breath, then exhale slowly through the nose.
+
+\n\nRepeat five to ten times
+    </string>
+    <string name="ujjayi_process">
+        Both Ujjayi and Surya Bheda are body heating pranayamas and so exhalation is confined to the cooling left nostril. Inhale fully through both nostrils while slightly closing the glottis.Glottis is the part of the larnyx made up of the vocal cords and the slit like opening between them. This should create a faint sobbing sound, as the air is drawn past the back of the nose. Retain the breath, applying both Bandhas Jalandhara and Moola. After the breath has been exhaled apply Uddiyaa Bandha.
+
+\n\nStart with three rounds build up to twenty rounds.
+    </string>
+    <string name="surya_bheda_process">
+        With this breathing exercise you inhale slowly through the right nostril while closing the left nostril Now close both nostrils and apply Jalandhara Bandha. Lift the chin, keep the right nostril closed and exhale through the left nostril. Try to gradually increase your period of breath retention.
+
+\n\nBuild up to ten repetitions of Surya Bheda in the beginning, eventually you may do forty repetitions.
+    </string>
+    <string name="bhastrika_process">
+        Bhastrika consists of a series of pumping motions, very fast and forceful. Take air in and out through both nostrils, use all the muscles of your respiratory system. Then close off both nostrils and apply both Jalandhara and Moola Bandha while retaining the breath. Then you raise your head and exhale through the right nostril to cool the body down. Now apply Uddiyana Bandha directly after the exhalation. This constitutes one round.
+
+\n\nBegin your practice with three rounds of ten pumping motions and then very gradually work up to a maximum of eight rounds of a hundred pumping motions.
+    </string>
+    <string name="uddiyana_process">
+        After completely exhaling pull in your abdomen then pull it up and backward toward the spine.
+    </string>
+    <string name="moola_process">
+        While retaimimg the breath, contract the anal sphinter muscle then the abdominal muscles. Hold for as long as you hold your breath.
+    </string>
+
+</resources>

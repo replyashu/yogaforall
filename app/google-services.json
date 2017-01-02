@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "840755621391",
+    "project_id": "yoga-76b85"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840755621391:android:62ae93cc7eca474c",
+        "android_client_info": {
+          "package_name": "ashu.yogaforyou"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB9kYT7um4VglWvKLNcIOH7iknU2JuGUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89703838-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
