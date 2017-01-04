@@ -1,11 +1,17 @@
 package ashu.yogaforyou.activity;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -25,6 +31,9 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
 import ashu.yogaforyou.R;
 import ashu.yogaforyou.fragment.BreathingFragment;
 import ashu.yogaforyou.fragment.HomeFragment;
@@ -39,6 +48,12 @@ public class MainActivity extends AppCompatActivity
     private SimpleDraweeView simpleDraweeView;
 
     private Tracker mTracker;
+
+    private String urlOfApp = "https://play.google.com/store/apps/" +
+            "details?id=ashu.yogaforyou";
+    private String latestVersion;
+    private String currentVersion;
+    private Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,8 +103,18 @@ public class MainActivity extends AppCompatActivity
         AppController appController = (AppController) getApplication();
         mTracker = appController.getDefaultTracker();
 
+        PackageManager pm = this.getPackageManager();
+        PackageInfo pInfo = null;
 
+        try {
+            pInfo = pm.getPackageInfo(this.getPackageName(), 0);
+        } catch (PackageManager.NameNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        currentVersion = pInfo.versionName;
 
+        new GetCurrentVersion().execute();
     }
 
     @Override
@@ -201,5 +226,54 @@ public class MainActivity extends AppCompatActivity
         startActivityForResult(Intent.createChooser(
                 sendIntent,"Share With Your Friends"),
                 Activity.RESULT_OK);
+    }
+
+    public class GetCurrentVersion extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            try {
+                Document doc = Jsoup.connect(urlOfApp).get();
+                latestVersion = doc.getElementsByAttributeValue
+                        ("itemprop", "softwareVersion").first().text();
+            } catch (Exception e) {
+
+            }
+            return null;
+        }
+
+        //TODO: Remove isNetConnected before release
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            if (!(currentVersion.equalsIgnoreCase(latestVersion) || latestVersion == null))
+                showUpdateDialog();
+            super.onPostExecute(aVoid);
+
+        }
+    }
+
+    private void showUpdateDialog() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("A New Update is Available");
+        builder.setPositiveButton("Update", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse
+                        ("market://details?id=filter.ashu.smsfilter")));
+                finish();
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.setCancelable(false);
+        dialog = builder.show();
     }
 }

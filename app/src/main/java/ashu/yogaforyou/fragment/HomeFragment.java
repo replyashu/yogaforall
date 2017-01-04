@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import ashu.yogaforyou.R;
+import ashu.yogaforyou.activity.MainActivity;
 import ashu.yogaforyou.adapter.HomeFragmentAdapter;
 import ashu.yogaforyou.util.IabHelper;
 import ashu.yogaforyou.util.IabResult;
@@ -197,6 +198,8 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("isPurchased", "yes");
                         editor.commit();
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+
                     } else {
                         // handle error
                     }

@@ -20,6 +20,7 @@ import ashu.yogaforyou.R;
 import ashu.yogaforyou.adapter.ExerciseAdapter;
 import ashu.yogaforyou.global.AppController;
 
+
 /**
  * Created by apple on 01/01/17.
  */

@@ -18,7 +18,6 @@ import com.google.android.gms.analytics.Tracker;
 
 import ashu.yogaforyou.R;
 import ashu.yogaforyou.adapter.ExerciseAdapter;
-import ashu.yogaforyou.adapter.HomeFragmentAdapter;
 import ashu.yogaforyou.global.AppController;
 
 /**

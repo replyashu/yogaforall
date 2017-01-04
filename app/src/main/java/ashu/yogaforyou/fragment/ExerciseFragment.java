@@ -1,11 +1,13 @@
 package ashu.yogaforyou.fragment;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,8 @@ import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
+
+import java.util.Locale;
 
 import ashu.yogaforyou.R;
 
@@ -33,8 +37,11 @@ public class ExerciseFragment extends Fragment {
     private TextView headerName;
     private TextView txtPurpose;
     private TextView txtProcess;
+    private Button btnSpeakProcess;
 
     private SimpleDraweeView exerciseImage;
+
+    private TextToSpeech t1;
 
     public ExerciseFragment(){
 
@@ -54,6 +61,15 @@ public class ExerciseFragment extends Fragment {
 
         initializeLayoutVariables();
         choseRightExercise(exerciseName);
+
+        t1 = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i != TextToSpeech.ERROR) {
+                    t1.setLanguage(Locale.UK);
+                }
+            }
+        });
         populateView();
     }
 
@@ -63,6 +79,8 @@ public class ExerciseFragment extends Fragment {
         txtProcess = (TextView) view.findViewById(R.id.txtProcess);
 
         exerciseImage = (SimpleDraweeView) view.findViewById(R.id.my_image_view);
+
+        btnSpeakProcess = (Button) view.findViewById(R.id.readProcess);
 
     }
 
@@ -78,6 +96,40 @@ public class ExerciseFragment extends Fragment {
                 .build();
         exerciseImage.setController(controller);
 
+        btnSpeakProcess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String toSpeak = txtProcess.getText().toString();
+                t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if(t1 !=null){
+            t1.stop();
+            t1.shutdown();
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if(t1 !=null){
+            t1.stop();
+            t1.shutdown();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if(t1 !=null){
+            t1.stop();
+            t1.shutdown();
+        }
     }
 
     private void choseRightExercise(String name){

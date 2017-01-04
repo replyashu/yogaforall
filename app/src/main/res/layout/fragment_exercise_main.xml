@@ -27,12 +27,21 @@
         fresco:placeholderImage="@drawable/yoga"
         />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Purpose:"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purpose:"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
 
 
     <TextView
@@ -43,12 +52,29 @@
         android:gravity="center"
         android:text="@string/both_big_toe_purpose"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Process:"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process:"
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readProcess"
+            android:layout_weight="0.1"
+            android:elevation="0dp"
+            android:background="@android:drawable/ic_btn_speak_now" />
+
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="match_parent"
