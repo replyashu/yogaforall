@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ashu.yogaforyou">
+    package="ashu.yogaforyou"
+    xmlns:tools="http://schemas.android.com/tools">
+
     
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING" />
@@ -13,7 +15,9 @@
         android:icon="@drawable/yoga"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary = "com.facebook"
+        >
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
@@ -24,6 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1626711070688641"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
     </application>
 
 </manifest>

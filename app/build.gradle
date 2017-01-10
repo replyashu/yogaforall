@@ -5,10 +5,10 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "ashu.yogaforyou"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 24
-        versionCode 3
-        versionName "1.0.1"
+        versionCode 5
+        versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -33,7 +33,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-analytics:10.0.1'
     compile 'org.jsoup:jsoup:1.7.3'
-
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
 
 }
 

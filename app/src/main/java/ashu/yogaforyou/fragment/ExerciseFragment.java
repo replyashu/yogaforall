@@ -1,14 +1,20 @@
 package ashu.yogaforyou.fragment;
 
+import android.app.Dialog;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
@@ -43,6 +49,13 @@ public class ExerciseFragment extends Fragment {
 
     private TextToSpeech t1;
 
+    private Button btnOk;
+    private SeekBar seekPitch;
+    private SeekBar seekSpeech;
+
+    private SharedPreferences sp;
+    private SharedPreferences.Editor editor;
+    private int speechRate, pitchRate;
     public ExerciseFragment(){
 
     }
@@ -62,14 +75,6 @@ public class ExerciseFragment extends Fragment {
         initializeLayoutVariables();
         choseRightExercise(exerciseName);
 
-        t1 = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int i) {
-                if(i != TextToSpeech.ERROR) {
-                    t1.setLanguage(Locale.UK);
-                }
-            }
-        });
         populateView();
     }
 
@@ -81,6 +86,25 @@ public class ExerciseFragment extends Fragment {
         exerciseImage = (SimpleDraweeView) view.findViewById(R.id.my_image_view);
 
         btnSpeakProcess = (Button) view.findViewById(R.id.readProcess);
+
+        sp = getActivity().getSharedPreferences("setting", Context.MODE_PRIVATE);
+        editor = sp.edit();
+        t1 = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i != TextToSpeech.ERROR) {
+                    t1.setLanguage(Locale.UK);
+                }
+            }
+        });
+
+        speechRate = sp.getInt("speech", 1);
+        pitchRate = sp.getInt("pitch", 1);
+
+        t1.setPitch(pitchRate);
+        t1.setSpeechRate(speechRate);
+
+
 
     }
 
@@ -96,6 +120,14 @@ public class ExerciseFragment extends Fragment {
                 .build();
         exerciseImage.setController(controller);
 
+        btnSpeakProcess.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                longClick();
+                return true;
+            }
+        });
+
         btnSpeakProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,6 +135,80 @@ public class ExerciseFragment extends Fragment {
                 t1.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+
+
+    }
+
+    private void longClick(){
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.dialog_control_speech);
+        // Set dialog title
+        dialog.setTitle("Control Speech");
+        dialog.show();
+
+        btnOk = (Button) dialog.findViewById(R.id.btnOk);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        seekPitch = (SeekBar) dialog.findViewById(R.id.seekPitch);
+
+        seekSpeech = (SeekBar) dialog.findViewById(R.id.seekSpeech);
+
+        seekSpeech.setProgress(speechRate);
+        seekPitch.setProgress(pitchRate);
+
+        seekSpeech.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                i += 1;
+                speechRate = i;
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                editor.putInt("speech", speechRate);
+                editor.commit();
+            }
+        });
+
+        seekPitch.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                i += 1;
+                pitchRate = i;
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                editor.putInt("pitch", pitchRate);
+                editor.commit();
+            }
+        });
+
+        btnOk = (Button) dialog.findViewById(R.id.btnOk);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                t1.setSpeechRate(speechRate);
+                t1.setPitch(pitchRate);
+                dialog.dismiss();
+            }
+        });
+
     }
 
     @Override

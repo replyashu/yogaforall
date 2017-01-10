@@ -35,6 +35,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import ashu.yogaforyou.R;
+import ashu.yogaforyou.fragment.About;
 import ashu.yogaforyou.fragment.BreathingFragment;
 import ashu.yogaforyou.fragment.HomeFragment;
 import ashu.yogaforyou.fragment.NormalFragment;
@@ -203,6 +204,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
             rateApp();
+        } else  if(id == R.id.more){
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_main, new About()).addToBackStack("About")
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -260,7 +265,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse
-                        ("market://details?id=filter.ashu.smsfilter")));
+                        ("market://details?id=ashu.yogafor you")));
                 finish();
                 dialog.dismiss();
             }
