@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/yogaFit"
+        android:layout_margin="20dp"
+        android:background="@drawable/fitness" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/yogaPant"
+        android:layout_margin="20dp"
+        android:background="@drawable/cloth" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/yogaFood"
+        android:layout_margin="20dp"
+        android:background="@drawable/food" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/yogaAccessory"
+        android:layout_margin="20dp"
+        android:background="@drawable/accessory" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yogaBooks"
+        android:layout_margin="20dp"
+        android:background="@drawable/book" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/btnExtra"
+        android:background="@drawable/deals"
+        android:layout_margin="20dp"/>
+</LinearLayout>
+</ScrollView>

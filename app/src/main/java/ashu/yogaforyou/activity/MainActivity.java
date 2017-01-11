@@ -39,6 +39,7 @@ import ashu.yogaforyou.fragment.About;
 import ashu.yogaforyou.fragment.BreathingFragment;
 import ashu.yogaforyou.fragment.HomeFragment;
 import ashu.yogaforyou.fragment.NormalFragment;
+import ashu.yogaforyou.fragment.ShopFragment;
 import ashu.yogaforyou.fragment.StressFragment;
 import ashu.yogaforyou.global.AppController;
 
@@ -191,6 +192,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.content_main, new BreathingFragment()).addToBackStack("Breathing")
+                    .commit();
+
+        } else if (id == R.id.shop) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_main, new ShopFragment()).addToBackStack("Shopping")
                     .commit();
 
         }

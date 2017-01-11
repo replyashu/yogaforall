@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
     private View view;
     private RecyclerView recyclerView;
 
-    private String [] yogaCat = new String[]{"Normal", "Stress", "Breathing"};
+    private String [] yogaCat = new String[]{"Normal", "Stress", "Breathing", "Yoga Shop"};
     private IabHelper mHelper;
 
     private SharedPreferences sp;
@@ -149,6 +149,13 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
                         .replace(R.id.content_main, new BreathingFragment()).addToBackStack("Breathing")
                         .commit();
                 break;
+
+            case 3:
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.content_main, new ShopFragment()).addToBackStack("Shopping")
+                        .commit();
+                break;
+
         }
     }
 
