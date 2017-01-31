@@ -104,6 +104,8 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
         sp = getActivity().getSharedPreferences("purchase", 0);
         isPurchased = sp.getString("isPurchased", "no");
+
+        Log.d("purchaseInfo", isPurchased);
     }
 
     private void populateRecyclerView(){
