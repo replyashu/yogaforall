@@ -156,10 +156,10 @@ public class ExerciseFragment extends Fragment {
     }
 
     private void inflateAndStartTimerDialog(){
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
 // ...Irrelevant code for customizing the buttons and title
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.dialog_exercise, null);
+        final View dialogView = inflater.inflate(R.layout.dialog_exercise, null);
         dialogBuilder.setView(dialogView);
 
         headerName = (TextView) dialogView.findViewById(R.id.headerName);
@@ -171,17 +171,21 @@ public class ExerciseFragment extends Fragment {
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
 
-        mCountDownTimer = new CountDownTimer(10300, 100) {
+        mCountDownTimer = new CountDownTimer(103000, 1000) {
             @Override
             public void onTick(long l) {
                 i++;
                 circleProgress.setProgress(i);
+                if(i == 100) {
+                    alertDialog.dismiss();
+                }
             }
 
             @Override
             public void onFinish() {
                 i++;
                 circleProgress.setProgress(i);
+
 
             }
         };
