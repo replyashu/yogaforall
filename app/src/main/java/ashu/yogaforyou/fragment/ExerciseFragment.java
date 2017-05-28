@@ -5,9 +5,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +24,7 @@ import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
+import com.github.lzyzsd.circleprogress.CircleProgress;
 
 import java.util.Locale;
 
@@ -44,6 +47,12 @@ public class ExerciseFragment extends Fragment {
     private TextView txtPurpose;
     private TextView txtProcess;
     private Button btnSpeakProcess;
+    private Button btnPlayProcess;
+
+    private CircleProgress circleProgress;
+
+    private CountDownTimer mCountDownTimer;
+    int i=0;
 
     private SimpleDraweeView exerciseImage;
 
@@ -86,6 +95,7 @@ public class ExerciseFragment extends Fragment {
         exerciseImage = (SimpleDraweeView) view.findViewById(R.id.my_image_view);
 
         btnSpeakProcess = (Button) view.findViewById(R.id.readProcess);
+        btnPlayProcess = (Button) view.findViewById(R.id.startProcess);
 
         sp = getActivity().getSharedPreferences("setting", Context.MODE_PRIVATE);
         editor = sp.edit();
@@ -136,6 +146,54 @@ public class ExerciseFragment extends Fragment {
             }
         });
 
+
+        btnPlayProcess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inflateAndStartTimerDialog();
+            }
+        });
+    }
+
+    private void inflateAndStartTimerDialog(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
+// ...Irrelevant code for customizing the buttons and title
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_exercise, null);
+        dialogBuilder.setView(dialogView);
+
+        headerName = (TextView) dialogView.findViewById(R.id.headerName);
+        exerciseImage = (SimpleDraweeView) dialogView.findViewById(R.id.my_image_view);
+        i = 0;
+
+        circleProgress = (CircleProgress) dialogView.findViewById(R.id.circle_progress);
+
+        final AlertDialog alertDialog = dialogBuilder.create();
+        alertDialog.show();
+
+        mCountDownTimer = new CountDownTimer(10300, 100) {
+            @Override
+            public void onTick(long l) {
+                i++;
+                circleProgress.setProgress(i);
+            }
+
+            @Override
+            public void onFinish() {
+                i++;
+                circleProgress.setProgress(i);
+
+            }
+        };
+        mCountDownTimer.start();
+
+        ImageRequest imageRequest = ImageRequestBuilder.newBuilderWithResourceId(res).build();
+        DraweeController controller = Fresco.newDraweeControllerBuilder()
+                .setUri(imageRequest.getSourceUri())
+                .setAutoPlayAnimations(true)
+                .build();
+        exerciseImage.setController(controller);
+        headerName.setText(exerciseName);
 
     }
 
