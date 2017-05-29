@@ -3,6 +3,7 @@ package ashu.yogaforyou.fragment;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -49,6 +50,8 @@ public class ExerciseFragment extends Fragment {
     private Button btnSpeakProcess;
     private Button btnPlayProcess;
 
+    private MediaPlayer mp1, mp2, mp3, mp4;
+
     private CircleProgress circleProgress;
 
     private CountDownTimer mCountDownTimer;
@@ -93,6 +96,12 @@ public class ExerciseFragment extends Fragment {
         txtProcess = (TextView) view.findViewById(R.id.txtProcess);
 
         exerciseImage = (SimpleDraweeView) view.findViewById(R.id.my_image_view);
+
+        mp1 = MediaPlayer.create(getActivity(), R.raw.yoga1);
+        mp2 = MediaPlayer.create(getActivity(), R.raw.mid);
+        mp3 = MediaPlayer.create(getActivity(), R.raw.end);
+        mp4 = MediaPlayer.create(getActivity(), R.raw.over);
+
 
         btnSpeakProcess = (Button) view.findViewById(R.id.readProcess);
         btnPlayProcess = (Button) view.findViewById(R.id.startProcess);
@@ -174,9 +183,30 @@ public class ExerciseFragment extends Fragment {
         mCountDownTimer = new CountDownTimer(103000, 1000) {
             @Override
             public void onTick(long l) {
+                mp1.start();
+                mp1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        mp2.start();
+                    }
+                });
+
+                mp2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        mp3.start();
+                    }
+                });
                 i++;
                 circleProgress.setProgress(i);
+                if(i == 98){
+                    mp1.stop();
+                    mp2.stop();
+                    mp3.stop();
+                    mp4.start();
+                }
                 if(i == 100) {
+                    mp4.stop();
                     alertDialog.dismiss();
                 }
             }
