@@ -231,6 +231,8 @@ public class ExerciseFragment extends Fragment {
 
     }
 
+
+
     private void longClick(){
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_control_speech);
@@ -306,6 +308,10 @@ public class ExerciseFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
+        mp1.stop();
+        mp2.stop();
+        mp3.stop();
+        mp4.stop();
         if(t1 !=null){
             t1.stop();
             t1.shutdown();
