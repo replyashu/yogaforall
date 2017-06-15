@@ -183,30 +183,31 @@ public class ExerciseFragment extends Fragment {
         mCountDownTimer = new CountDownTimer(103000, 1000) {
             @Override
             public void onTick(long l) {
+                stopAll();
                 mp1.start();
                 mp1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mediaPlayer) {
-                        mp2.start();
+                        stopAll();
+//                        mp2.start();
                     }
                 });
 
-                mp2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        mp3.start();
-                    }
-                });
+//                mp2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                    @Override
+//                    public void onCompletion(MediaPlayer mediaPlayer) {
+//                        stopAll();
+//                        mp3.start();
+//                    }
+//                });
                 i++;
                 circleProgress.setProgress(i);
                 if(i == 98){
-                    mp1.stop();
-                    mp2.stop();
-                    mp3.stop();
+                    stopAll();
                     mp4.start();
                 }
                 if(i == 100) {
-                    mp4.stop();
+                    stopAll();
                     alertDialog.dismiss();
                 }
             }
@@ -230,6 +231,7 @@ public class ExerciseFragment extends Fragment {
         headerName.setText(exerciseName);
 
     }
+
 
 
 
@@ -308,10 +310,9 @@ public class ExerciseFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        mp1.stop();
-        mp2.stop();
-        mp3.stop();
-        mp4.stop();
+        stopAll();
+        if(mp2.isPlaying())
+            mp2.pause();
         if(t1 !=null){
             t1.stop();
             t1.shutdown();
@@ -321,6 +322,7 @@ public class ExerciseFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
+        stopAll();
         if(t1 !=null){
             t1.stop();
             t1.shutdown();
@@ -330,6 +332,7 @@ public class ExerciseFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        stopAll();
         if(t1 !=null){
             t1.stop();
             t1.shutdown();
@@ -617,6 +620,17 @@ public class ExerciseFragment extends Fragment {
             process = getString(R.string.moola_process);
         }
 
+    }
+
+    private void stopAll(){
+        if(mp1.isPlaying())
+            mp1.stop();
+        if(mp2.isPlaying())
+            mp2.stop();
+        if(mp3.isPlaying())
+            mp3.stop();
+        if(mp4.isPlaying())
+            mp4.stop();
     }
 
 }
