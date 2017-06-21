@@ -56,15 +56,15 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
         intializeLayoutVariables();
         populateRecyclerView();
 
-        setUpInApp();
-        queryPurchasedItems();
+//        setUpInApp();
+//        queryPurchasedItems();
         super.onStart();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        setUpInApp();
+//        setUpInApp();
     }
 
     private void setUpInApp(){
@@ -105,7 +105,6 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
         sp = getActivity().getSharedPreferences("purchase", 0);
         isPurchased = sp.getString("isPurchased", "no");
 
-        Log.d("purchaseInfo", isPurchased);
     }
 
     private void populateRecyclerView(){
@@ -128,16 +127,16 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
     public void onItemClick(int position) {
         switch (position){
             case 0:
-                if(isPurchased.equalsIgnoreCase("no")) {
-
-                    mHelper.launchPurchaseFlow(getActivity(), "normal", 10001,
-                            mPurchaseFinishedListener, "mypurchasetoken");
-                }
-                else {
+//                if(isPurchased.equalsIgnoreCase("no")) {
+//
+//                    mHelper.launchPurchaseFlow(getActivity(), "normal", 10001,
+//                            mPurchaseFinishedListener, "mypurchasetoken");
+//                }
+//                else {
                     getActivity().getSupportFragmentManager().beginTransaction()
                             .replace(R.id.content_main, new NormalFragment()).addToBackStack("Normal")
                             .commit();
-                }
+//                }
                 break;
 
             case 1:
@@ -218,16 +217,16 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.ViewHo
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mHelper != null) mHelper.dispose();
-        mHelper = null;
+//        if (mHelper != null) mHelper.dispose();
+//        mHelper = null;
     }
 
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (!mHelper.handleActivityResult(requestCode,
-                resultCode, data)) {
+//        if (!mHelper.handleActivityResult(requestCode,
+//                resultCode, data)) {
             super.onActivityResult(requestCode, resultCode, data);
-        }
+//        }
     }
 }
