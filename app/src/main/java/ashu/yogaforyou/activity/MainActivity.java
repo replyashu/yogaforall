@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.crashlytics.android.Crashlytics;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -31,6 +32,7 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
+import io.fabric.sdk.android.Fabric;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         Fresco.initialize(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -181,7 +184,7 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_main, new HomeFragment()).addToBackStack("Home")
+                    .replace(R.id.content_main, new NormalFragment()).addToBackStack("Normal")
                     .commit();
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
@@ -266,7 +269,7 @@ public class MainActivity extends AppCompatActivity
 
     private void showUpdateDialog() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("A New Update is Available");
+        builder.setTitle("Calories burnt in next update...");
         builder.setPositiveButton("Update", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
