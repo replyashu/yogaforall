@@ -248,8 +248,7 @@ public class MainActivity extends AppCompatActivity
         protected Void doInBackground(Void... params) {
             try {
                 Document doc = Jsoup.connect(urlOfApp).get();
-                latestVersion = doc.getElementsByAttributeValue
-                        ("itemprop", "softwareVersion").first().text();
+                latestVersion = doc.getElementsByClass("htlgb").get(6).text();
             } catch (Exception e) {
 
             }
